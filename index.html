@@ -56,7 +56,7 @@
             <!--contenedor cards-->        
             <div class="section-cards flex">
                 <!-- card one -->
-                <article class="card">
+                <article class="cards card card--1">
                     <header>
                         <img class="section-cards__img" src="assets/peticiones-de-oracion.webp" alt="Una persona dentro de un templo arrodillada con las manos juntas a la altura de su pecho en actitud de oración">
                         <h3 class="section-cards__title">Intercesión</h3>
@@ -65,7 +65,7 @@
                     <a href="/index.html#contacto" class="link btn section-cards__btn">Necesito oración</a>
                 </article>  
                 <!-- card two -->
-                <article class="card">
+                <article class="cards card card--2">
                     <header>
                         <img class="section-cards__img" src="assets/estudio-biblico.webp" alt="Una persona mostrando una biblia con la tapa negra y letras doradas">
                         <h3 class="section-cards__title">Capacitación</h3>
@@ -74,7 +74,7 @@
                     <a href="https://ministeriocristianoplenitud.blogspot.com/" target="_blank" rel="noopener noreferrer" class="link btn section-cards__btn">Quiero saber más</a>
                 </article>
                <!-- card trhee -->
-                <article class="card">
+                <article class="cards card">
                     <header>
                         <img class="section-cards__img" src="assets/consejeria.webp" alt="Un hombre y una mujer sentados sillas con cojines de frente con sus piernas cruzadas en actitud de conversación">
                         <h3 class="section-cards__title">Consejería</h3>
@@ -104,7 +104,7 @@
                     <div >
                         <h3 class="banner__title--txt">Todos los domingos a las 9 a.m</h3>
                     </div>                    
-                    <a href="https://www.youtube.com/channel/UC5cvkqgi1_wA0fr9Ju4E-0A" target="_blank" class="link btn banner-btn">Ir al podcast</a>                   
+                    <a href="https://www.youtube.com/channel/UC5cvkqgi1_wA0fr9Ju4E-0A" target="_blank" class="link btn banner-btn">Ir al podcat</a>                   
                 </article>
             </div>
         </section>
@@ -112,57 +112,26 @@
         <!-- contenedor -->
         <section id="contacto" class="sections">
             <h2 class="sections__titles titles">Únete a nuestra comunidad</h2>
-            <div class="section-cards flex">
-                <div class="container-contc-rrss section-form">
-                    <form class="section-form" action="enviar.html" method="POST">
-                        <div class="label">
-                            <label for="names">NOMBRE Y APELLIDO:</label>
-                        </div>
-                        <input class="inputs" type="text" id="names" name="name" placeholder="Ex. Luis Tovar" required> 
-                        <div>
-                            <label class="label" for="correo">CORREO ELECTRÓNICO:</label>
-                        </div>
-                        <input class="inputs" type="email" id="correo" name="email" placeholder="Ex. usuario@email.com" required> 
-                        <div>
-                            <label class="label" for="tel">NUMERO TELEFÒNICO:</label>
-                        </div>
-                        <input class="inputs" type="email" id="tel" name="email" placeholder="Ex. +11 1111111111" required>                    
-                        <div class="label">
-                            ASUNTO:
-                        </div>
-                        <select class="inputs" name="asunto" id="">
-                            <option value="donativos">Testimonio</option>
-                            <option value="suscripción">Petición de oración</option>
-                            <option value="sugerencias">Consejería</option>
-                        </select>
-                        <div class="label">
-                            <label for="descripción">COMENTARIO:</label>     
-                        </div>
-                        <textarea class="inputs" name="comentario" id="descripción" rows="6" maxlength="250"></textarea>         
-                        <div>
-                            <input class="btn form-btn" type="submit">
-                        </div>    
-                    </form>
-                </div>
-                <div class="container-contc-rrss flex section-rrss">
-                    <div class="flex">
+            <div class="section-cards flex cards">
+                <div class="container__rrss flex section-rrss">
+                    <div class="flex section-rrss--icon">
                         <div class="rrss">
-                            <a class="link" href="#" target="_blank" rel="noopener noreferrer">        
+                            <a class="link rrss--link" href="#" target="_blank" rel="noopener noreferrer">        
                                 <img src="/assets/instagram_3955024.svg" alt="logo de instagram">
                             </a>
                         </div>
                         <div class="rrss">
-                            <a class="link" href="https://www.facebook.com/mcplenitud/" target="_blank" rel="noopener noreferrer">
+                            <a class="link rrss--link" href="https://www.facebook.com/mcplenitud/" target="_blank" rel="noopener noreferrer">
                                 <img src="/assets/facebook.svg" alt="logo de facebook">
                             </a>
                         </div>
                         <div class="rrss">
-                            <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+                            <a class="link rrss--link" href="#" target="_blank" rel="noopener noreferrer">
                                 <img src="/assets/descarga.svg" alt="logo de threads">
                             </a>
                         </div>
                     </div>
-                    <div class="flex">
+                    <div class="flex section-rrss--icon">
                         <div class="rrss">
                             <a class="link" href="https://twitter.com/MCPLENITUD" target="_blank" rel="noopener noreferrer">
                                 <img src="/assets/twitter.svg" alt="logo de twiter">
@@ -179,7 +148,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="flex">
+                    <div class="flex section-rrss--icon">
                         <div class="rrss">
                             <a class="link" href="https://www.youtube.com/channel/UC5cvkqgi1_wA0fr9Ju4E-0A" target="_blank" rel="noopener noreferrer">
                                 <img src="/assets/youtube.svg" alt="logo de youtube">
@@ -197,6 +166,36 @@
                         </div>
                     </div>  
                 </div>
+                
+                <form class="container__rrss section-form" action="enviar.html" method="POST">
+                    <div class="label">
+                        <label for="names">NOMBRE Y APELLIDO:</label>
+                    </div>
+                    <input class="inputs" type="text" id="names" name="name" placeholder="Ex. Luis Tovar" required> 
+                    <div>
+                        <label class="label" for="correo">CORREO ELECTRÓNICO:</label>
+                    </div>
+                    <input class="inputs" type="email" id="correo" name="email" placeholder="Ex. usuario@email.com" required> 
+                    <div>
+                        <label class="label" for="tel">NUMERO TELEFÒNICO:</label>
+                    </div>
+                    <input class="inputs" type="email" id="tel" name="email" placeholder="Ex. +11 1111111111" required>                    
+                    <div class="label">
+                        ASUNTO:
+                    </div>
+                    <select class="inputs" name="asunto" id="">
+                        <option value="donativos">Testimonio</option>
+                        <option value="suscripción">Petición de oración</option>
+                        <option value="sugerencias">Consejería</option>
+                    </select>
+                    <div class="label">
+                        <label for="descripción">COMENTARIO:</label>     
+                    </div>
+                    <textarea class="inputs" name="comentario" id="descripción" rows="6" maxlength="250"></textarea>         
+                    <div>
+                        <input class="btn form-btn" type="submit">
+                    </div>    
+                </form>
             </div>
         </section>
         
