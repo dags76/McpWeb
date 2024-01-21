@@ -309,8 +309,41 @@ letter-spacing: 2px;
     }
 }
 @media screen and (max-width: 540px) {
-    .section-cards__img{
+    .titles{
+        margin-bottom: 1.4rem;
+        letter-spacing: 1.4px;
+     }
+    .topbar{
+        font-size: 1rem;
+        font-weight: 600;
+        background-color:hsl(0, 0%, 100%);
+    }
+    .topbars__nav{
+        display: flex;
+        align-items: center;
+    }
+    .topbars__items{
+        display: inline-block;
+        list-style-type: none;
+        padding-left: .5em;
+    }
+    .topbars__toggle{
+        display: none;
+    }
+     .header__title{
+        font-size: 2rem;
+     }
+     .header__subtitle{
+        text-align: center;
+        font-size: 1rem;
+     }
+    .card header{
         width: 200px;
+        height: 174px;
+    }
+    .section-cards__img{
+        /* width: 200px; */
+        object-fit: cover;
     }
     .section-cards__txt{
         left: 200px;
@@ -323,6 +356,65 @@ letter-spacing: 2px;
     .section-cards__btn{
         width: 30%;
     }
+    .banner{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    .container__rrss{
+        width: 100%;
+    }
+    .inputs, .label, .form-btn{
+        width: 75%;
+    }
+}
+@media screen and (max-width: 430px) {
+    .titles{
+        margin-bottom: 1.6rem;
+        letter-spacing: 1.4px;
+     }
+    .topbar ul{
+       display: none;
+    }
+    .topbars__toggle{
+        display: none;
+    }
+     .header__title{
+        font-size: 2.4rem;
+     }
+     .header__subtitle{
+        text-align: center;
+        font-size: 1.2rem;
+     }
+     .section-cards{
+        flex-direction: column;   
+    }
+    .card header{
+        display: initial;
+    }
+    .card{
+        position: relative;
+        width: 80%;
+        height: 350px;
+        overflow: hidden;
+    }
+    .section-cards__title,
+    .section-cards__txt{
+        margin: 0.8em;
+    }
+    .section-cards__txt{
+        margin-bottom: 60px;
+    }
+    .section-card__title{
+        font-size: 1.4rem;
+    }
+    .section-cards__btn{
+        position: absolute;
+        right: 0rem;
+        bottom: 0rem;
+        width: 100%;
+        box-shadow: initial;
+    }  
     .banner{
         width: 100%;
         text-align: center;
