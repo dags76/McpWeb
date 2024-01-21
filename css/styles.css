@@ -80,7 +80,6 @@ body{
     background-blend-mode:color-burn;
     color: #fff;
 }
-
 .header__title{
     /* font-family: 'Roboto Slab', serif; */
     font-size: 4rem;
@@ -114,7 +113,7 @@ letter-spacing: 2px;
     font-size: 2rem;
 }
 .section-cards__img{
-    width: 300px;
+    /* width: 600px; */
     max-width: 100%;
 }
 
@@ -127,12 +126,16 @@ letter-spacing: 2px;
 .card{
     position: relative;
     width: 30%;
-    height: 400px;
+    max-width: 380px;
+    /* height: 400px; */
     overflow: hidden;
 }
 .section-cards__title,
 .section-cards__txt{
     margin: 0.8em;
+}
+.section-cards__txt{
+    margin-bottom: 60px;
 }
 .section-card__title{
     font-size: 1.4rem;
@@ -146,7 +149,6 @@ letter-spacing: 2px;
 }
 
 /* section banner */
-
 .section-banner{
     border-radius: 10px;
     background: url(/assets/podcast-8308462_640.webp) center / cover ;
@@ -186,7 +188,6 @@ letter-spacing: 2px;
 }
 
 /* formulario y rrss*/
-
 .container__rrss{
     width: 50%;
     padding: 1em 0;
@@ -252,7 +253,7 @@ letter-spacing: 2px;
     width: 100%;
     height: 100%;
 }
-footer{
+.footer{
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(hsla(170, 83%, 39%, 0.5), hsla(170, 83%, 39%));
@@ -261,20 +262,23 @@ footer{
     margin-top: 1em;
     font-size: 0.8rem;
 }
-footer p{
+.footer p{
     margin: 0;
 }
 
 @media screen and (max-width: 768px) {
-    .container__rrss{
-        width: 100%;
+    .section-cards__img{
+        width: 300px;
+        max-width: 100%;
     }
+    
     .section-cards{
         flex-direction: column;
         align-items: center;
     }
     .card{
         width: 100%;
+        max-width: initial;
         height: 200px;
     }
     .card--1, .card--2{
@@ -297,7 +301,39 @@ footer p{
         text-align: center;
         align-items: center;
     }
+    .container__rrss{
+        width: 100%;
+    }
+    .inputs, .label, .form-btn{
+        width: 75%;
+    }
 }
-
+@media screen and (max-width: 540px) {
+    .section-cards__img{
+        width: 200px;
+    }
+    .section-cards__txt{
+        left: 200px;
+        width:calc(100% - 220px);
+    }
+    .card{
+        height: 174px;
+        font-size: 0.9rem;
+    }
+    .section-cards__btn{
+        width: 30%;
+    }
+    .banner{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    .container__rrss{
+        width: 100%;
+    }
+    .inputs, .label, .form-btn{
+        width: 75%;
+    }
+}
 
 
