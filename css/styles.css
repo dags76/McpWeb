@@ -15,7 +15,7 @@ body{
     border-radius: 4px;
     padding: .7rem 0;
     text-align: center;
-    background-color: hsla(170, 83%, 39%);
+    background-color: hsl(170, 83%, 39%);
 }
 .btn:hover{
     background-color: hsl(59, 80%, 40%);
@@ -319,16 +319,13 @@ letter-spacing: 2px;
         background-color:hsl(0, 0%, 100%);
     }
     .topbars__nav{
-        display: flex;
-        align-items: center;
-    }
-    .topbars__items{
-        display: inline-block;
-        list-style-type: none;
-        padding-left: .5em;
+        display: none;
     }
     .topbars__toggle{
-        display: none;
+        display:block;
+        width: 40px;
+        height: 40px;
+        margin-left: auto;
     }
      .header__title{
         font-size: 2rem;
@@ -370,21 +367,16 @@ letter-spacing: 2px;
 }
 @media screen and (max-width: 430px) {
     .titles{
+        font-size: 1.6rem;
         margin-bottom: 1.6rem;
-        letter-spacing: 1.4px;
+        letter-spacing: 1.2px;
      }
-    .topbar ul{
-       display: none;
-    }
-    .topbars__toggle{
-        display: none;
-    }
      .header__title{
-        font-size: 2.4rem;
+        font-size: 1.8rem;
      }
      .header__subtitle{
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1rem;
      }
      .section-cards{
         flex-direction: column;   
@@ -403,28 +395,35 @@ letter-spacing: 2px;
         margin: 0.8em;
     }
     .section-cards__txt{
-        margin-bottom: 60px;
-    }
-    .section-card__title{
-        font-size: 1.4rem;
+        width: initial;
+        left: initial;
+        top: initial;
     }
     .section-cards__btn{
-        position: absolute;
-        right: 0rem;
-        bottom: 0rem;
         width: 100%;
-        box-shadow: initial;
     }  
+    .section-banner{
+        padding-left: 0;
+    }
     .banner{
-        width: 100%;
-        text-align: center;
-        align-items: center;
+        padding: 0.2rem;
+    }
+    .banner__title{
+        font-size: 2.4rem;
+        line-height: initial;
+        letter-spacing: 2px;
+    }
+    .banner__title--txt{
+        font-size: 1.2rem;
+    }
+    .banner div h3{
+        font-size: 1.4rem;
     }
     .container__rrss{
         width: 100%;
     }
     .inputs, .label, .form-btn{
-        width: 75%;
+        width: 90%;
     }
 }
 
