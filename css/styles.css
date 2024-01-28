@@ -89,6 +89,7 @@ body{
 .header__subtitle{
 font-weight: 400;
 letter-spacing: 2px;
+text-align: center;
 }
 /* .header__btn{
     justify-content:space-between;
@@ -267,11 +268,25 @@ letter-spacing: 2px;
 }
 
 @media screen and (max-width: 768px) {
+    .header__title{
+        margin-top: 0;
+        margin-bottom: 1.6rem;
+        font-size: 3rem;
+        letter-spacing: 3px;
+     }
+    .topbar{
+        font-size: 1rem;
+    }
+    .topbars__menu{
+        height: 60px;
+        margin: 0;
+        display: inline-flex;
+        align-items: center;
+    }
     .section-cards__img{
-        width: 300px;
+        width: 250px;
         max-width: 100%;
     }
-    
     .section-cards{
         flex-direction: column;
         align-items: center;
@@ -279,7 +294,7 @@ letter-spacing: 2px;
     .card{
         width: 100%;
         max-width: initial;
-        height: 200px;
+        /* height: 200px; */
     }
     .card--1, .card--2{
         margin-bottom: 1.4em;
@@ -289,9 +304,8 @@ letter-spacing: 2px;
     }
     .section-cards__txt{
         position: absolute;
-        width:calc(100% - 300px);
         top: 40px;
-        left: 300px;
+        left: 250px;
     }
     .section-cards__btn{
         width: 30%;
@@ -358,6 +372,9 @@ letter-spacing: 2px;
         text-align: center;
         align-items: center;
     }
+    .banner__title{
+        line-height: initial;
+    }
     .container__rrss{
         width: 100%;
     }
@@ -377,9 +394,13 @@ letter-spacing: 2px;
      .header__subtitle{
         text-align: center;
         font-size: 1rem;
+        padding: 0 0.4em;
      }
      .section-cards{
         flex-direction: column;   
+    }
+    .section-cards__img{
+        width: 300px;
     }
     .card header{
         display: initial;
@@ -398,6 +419,7 @@ letter-spacing: 2px;
         width: initial;
         left: initial;
         top: initial;
+        margin-top: 0;
     }
     .section-cards__btn{
         width: 100%;
@@ -418,6 +440,9 @@ letter-spacing: 2px;
     }
     .banner div h3{
         font-size: 1.4rem;
+    }
+    .banner-btn{
+        width: 80%;
     }
     .container__rrss{
         width: 100%;
